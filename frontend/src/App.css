@@ -1,0 +1,317 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;700;900&display=swap');
+
+:root {
+  --primary-color: #005BAB;
+  --secondary-color: #00aeef;
+  --text-color: #303030;
+}
+
+* {
+  color: var(--text-color);
+  font-family: 'Archivo', sans-serif;
+}
+.c1200{
+  max-width: 1200px;
+  margin: 0 auto !important;
+}
+h1{
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h2{
+  font-size: 1.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h3{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+h4{
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+h5{
+  font-size: 1rem;
+  font-weight: 500;
+}
+p{
+  font-size: 0.9375rem;
+  font-weight:500;
+  margin: 0;
+}
+.para{
+  font-size: 1rem;
+}
+.w1000{
+  width: 1000px;
+}
+.btn-k-primary{
+  border: none;
+  padding: 5px 20px;
+  color: white;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  transition: 0.5s;
+}
+.btn-k-primary:hover{
+  background-color: var(--secondary-color);
+}
+.btn-k-secondary{
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  color: white !important;
+  background-color: var(--secondary-color) !important;
+  transition: 0.5s;
+}
+.btn-k-secondary:hover{
+  background-color: var(--primary-color) !important;
+}
+.cursor-pointer:hover{cursor: pointer;}
+.hover-bg-danger:hover{background-color: rgb(218, 0, 0)(218, 0, 0);}
+.bg-k-primary{background-color: var(--primary-color);}
+.bg-k-secondary{background-color: var(--secondary-color);}
+
+p{
+  font-size: 16px;
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 26px;
+}
+
+
+
+
+
+/* ------------------------------------ Section three ------------------------------------------ */
+.secThree-img img {
+  width: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.secThree {
+  background-color: rgb(255, 255, 255);
+  /* margin-top: -10rem; */
+  /* gap: 50px; */
+  padding: 0;
+  border-radius: 25px;
+  /* justify-content: center;  */
+  font-size: 1.2rem;
+  box-shadow: rgba(1, 24, 58, 0.2) 0px 8px 24px;
+  overflow: hidden;
+}
+
+.secThree-info {
+  margin: auto 0;
+  flex-direction: column;
+  width: 40%;
+  padding: 0 50px 0 50px;
+}
+
+.secThree-info hr {
+  margin: auto 0;
+  color: #005bab;
+  /* flex-direction: column; */
+}
+.sti {
+  padding: 25px 0 25px 0;
+  gap: 15px;
+}
+.secThree-info p {
+  font-weight: 500;
+  color: #005bab;
+}
+.secThree-info img {
+  width: 30px;
+  color: red;
+}
+/* ---------------------------------------- TestCards ------------------------------------------- */
+.cards {
+  gap: 25px;
+  margin-bottom: 50px;
+}
+.test-cards {
+  gap: 25px;
+  justify-content: center;
+}
+.test-card {
+  margin-top: 25px;
+  background-color: #f2f2f2;
+  padding: 30px;
+  border-top: 1px solid #005bab;
+  border-bottom: 1px solid #005bab;
+  border-radius: 25px;
+  width: 350px;
+  text-align: left;
+}
+.test-card h3 {
+  color: #333333;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.test-card span {
+  color: #005bab;
+
+  font-size: 2rem;
+  font-weight: 600;
+}
+.test-btn {
+  background-color: #00aeef;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 36px;
+}
+.test-btns {
+  justify-content: flex-end;
+}
+
+/* ------------------------------------------- Section Four ------------------------------------- */
+.cards {
+  justify-content: center;
+}
+
+
+/* ----------------------------------------- Section Five ------------------------------------------ */
+
+.secFive {
+  justify-content: center;
+  text-align: center;
+}
+.s5-searchbox {
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 25px;
+}
+.s5-search {
+  background-color: #ffffff;
+  
+  padding: 8px 24px;
+  font-size: 1.2rem;
+  color: #005bab;
+  border-radius: 25px 0 0 25px;
+}
+.s5-searchBtn {
+  background-color: #005bab;
+  padding: 8px 24px;
+  font-size: 1.2rem;
+  color: #fff;
+  border: 2px solid #005bab;
+  border-radius: 0 25px 25px 0;
+}
+.s5-bookAtest {
+  margin-top: 50px 0 25px 0;
+}
+
+/* ----------------------------------------- Health Condition Articles ------------------------------------------ */
+
+/* LogPopup css */
+.popupbox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  z-index: -1; 
+  pointer-events: none;
+  background-color: transparent;
+  width: 0;
+  height: 0;
+}
+.popupbox.active {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  z-index: 2; 
+  pointer-events: auto;
+  background-color: #000000ae;
+  width: auto;
+  height: auto;
+}
+.popupsec{
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.popupbox.active + .overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+.loginpopupleftsec{
+  background-image: url('https://img.freepik.com/premium-photo/doctor-research-analysis-diagnose-checking-brain-testing-result-patient-medical-technology_34200-493.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.bottomlogbtn{
+  padding: 0 5px;
+  font-weight: 700;
+  background: none;
+  color: blue;
+  border: none;
+}
+.bottomlogbtn:hover{
+  color: red;
+}
+
+.popupclosebtn{
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  border: none;
+  border-radius: 0 0 0 5px;
+}
+/* LogPopup css */
+
+/* cards increment, decrement styling */
+.qntCntWrp{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  .quantDisp{
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    color: #005bab;
+    padding: 3px 6px;
+    width: calc(100% - 60px);
+    width: 46px;
+    height: 28px;
+    background-color: #fff;
+    border-top: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
+  }
+  .plusminBtn{
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(#fff,#f9f9f9);
+    display: inline-block;
+    border: 1px solid #c2c2c2;
+    cursor: pointer;
+    font-size: 16px;
+    padding-top: 1px;
+    line-height: 1;
+  }
+  .plsBtn{
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+  .mnsBtn{
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+}
+
+/* cards increment, decrement styling */
+

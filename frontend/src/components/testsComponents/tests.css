@@ -1,0 +1,28 @@
+.pagebanner{
+    position: relative;
+    height: 15em;
+    align-items: center;
+    background: url('https://img.freepik.com/free-photo/experiment-biotechnology-with-chemistry-science_23-2150365001.jpg?w=1060&t=st=1693206336~exp=1693206936~hmac=298f321f3d42d2c85a616759ad5fc036e099b783b64729b16ca8cba4b61ac944');
+    background-size: cover;
+    background-position: bottom center;
+    z-index: 0;
+}
+.pagebanner:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(4, 54, 159);
+    /* background-image: url('https://img.freepik.com/premium-photo/connected-dots-global-data-led-fiber-rays-tech-background-fast-communication-concept_494516-1792.jpg?w=1060'); */
+    background-size: cover;
+    opacity: 0.6;
+    z-index: -1;
+}
+.pagebanner .page_title{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.tstcard{
+    width: 200px
+}
